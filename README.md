@@ -3,33 +3,36 @@
 
 <p class="has-line-data" data-line-start="5" data-line-end="6">
 
-"La Sienne" - Where Fashion Finds its True Expression!
+Welcome to Accorda: Where Opportunities Meet Talent! 🌐
 
-Step into the mesmerizing world of "La Sienne," an exceptional E-commerce web application that brings the latest trends and fashion inspiration right to your doorstep. Inspired by the renowned SHEIN, "La Sienne" takes your online shopping experience to new heights, merging cutting-edge technology with a seamless user interface that caters to your every fashion need.
+Are you ready to unlock a world of possibilities in the job market? Look no further than Accorda, your go-to destination for seamless job connections. Whether you're an employer with exciting opportunities to share or a job seeker on the hunt for the next big adventure, Accorda is here to make your journey simple, efficient, and rewarding.
 
-At the heart of "La Sienne" lies a powerful tech stack, carefully curated to deliver an unparalleled shopping journey. Our front-end is crafted with React and Redux, ensuring a fluid and responsive interface that effortlessly adapts to your preferences. The dazzling designs come to life with the help of Sass, letting you explore a visually captivating array of products.
+For Employers: Post Your Open Jobs with Ease 📋
+Accorda empowers employers to effortlessly showcase their job openings to a vast and diverse pool of talent. Our user-friendly platform makes posting jobs a breeze, allowing you to highlight your company culture and attract the perfect candidates. Join us in building dynamic teams and shaping the future of your organization.
 
-Searching for the perfect outfit has never been easier. Leveraging API integration, "La Sienne" pulls an exquisite collection of high-quality images from Unsplash, allowing you to envision yourself in the latest styles and trends. Seamlessly connected to our versatile backend powered by Strapi and PostgreSQL, we ensure that every product detail is at your fingertips, providing an effortless shopping experience.
+For Job Seekers: Explore Your Next Career Move 🚀
+Job seekers, discover your dream job with Accorda! Our intuitive interface and powerful search features help you navigate through a myriad of opportunities. Whether you're a seasoned professional or just starting your career journey, Accorda connects you with employers looking for your unique skills and talents.
 
-But that's not all! "La Sienne" sets the bar high when it comes to speed and performance, thanks to the lightning-fast Vite framework. Say goodbye to long loading times and hello to instant gratification as you browse through our carefully curated selection of fashion items.
+Why Accorda?
 
-Capturing the essence of user convenience, "La Sienne" embraces React Router DOM, making navigation through the site smooth and intuitive. With Redux Toolkit, managing your shopping cart and wishlists becomes an absolute breeze, adding joy to your journey.
+Simplicity: Posting jobs and finding opportunities is quick and easy.
+Diversity: Access a broad range of industries, companies, and job types.
+Transparency: Employers and job seekers alike benefit from clear communication and straightforward processes.
+Community: Join a thriving community where talent and opportunities meet.
+Accorda is more than just a job board; it's a catalyst for career growth and organizational success. Start your journey with Accorda today and let's shape the future together.
 
-At "La Sienne," we understand that visuals are vital in the world of fashion. To ensure your shopping experience is nothing short of extraordinary, we've partnered with Cloudinary, giving you a seamless image loading experience and ensuring every product detail is showcased in all its glory.
-
-As you indulge in the joy of fashion exploration, our integration with the Cloudinary API ensures smooth and efficient image loading, showcasing every product detail in all its glory.
-  
+Explore opportunities. Connect with talent. Accorda – Where Careers Flourish! 🌟
 </p>
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
-<p class="has-line-data" data-line-start="8" data-line-end="9">To get started with Lasienne, you’ll need to clone this repository to your local machine:</p>
-<pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/Lasienne.git"> https://github.com/fifolio/Lasienne.git</a>
+<p class="has-line-data" data-line-start="8" data-line-end="9">To get started with Accorda, you’ll need to clone this repository to your local machine:</p>
+<pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/Accorda.git"> https://github.com/fifolio/Accorda.git</a>
 </code></pre>
 <p class="has-line-data" data-line-start="13" data-line-end="14">Once you have the repository on your local machine, navigate to the project directory and install the necessary dependencies:</p>
 
 <h3>Frontend:</h3>
 <pre><code class="has-line-data" data-line-start="16" data-line-end="19" class="language-sh">
-  cd Lasienne
+  cd Accorda
   cd frontend
   npm install
 </code></pre>
@@ -37,26 +40,16 @@ As you indulge in the joy of fashion exploration, our integration with the Cloud
 <pre><code class="has-line-data" data-line-start="22" data-line-end="24" class="language-sh">npm run dev
 </code></pre>
 
-<h3>Backend:</h3>
-<pre><code class="has-line-data" data-line-start="16" data-line-end="19" class="language-sh">
-  cd Lasienne
-  cd backend
-  npm install
-</code></pre>
-<h4 class="code-line" data-line-start=20 data-line-end=21 ><a id="Usage_20"></a>Usage</h2>
-<pre><code class="has-line-data" data-line-start="22" data-line-end="24" class="language-sh">npm run develop
-</code></pre>
-
 <h2 class="code-line" data-line-start=33 data-line-end=34 ><a id="Technologies_Used_33"></a>Technologies Used</h2>
-<p class="has-line-data" data-line-start="34" data-line-end="35">Lasienne is built using the following technologies:</p>
+<p class="has-line-data" data-line-start="34" data-line-end="35">Accorda is built using the following technologies:</p>
 <ul>
 <li class="has-line-data" data-line-start="36" data-line-end="37">Vite</li>
 <li class="has-line-data" data-line-start="37" data-line-end="38">React</li>
 <li class="has-line-data" data-line-start="38" data-line-end="39">Strapi (as a Backend)</li>
-  <li class="has-line-data" data-line-start="38" data-line-end="39">Render (as a Postgres Database)</li>
-  <li class="has-line-data" data-line-start="38" data-line-end="39">Cloudinary (as a SaaS Storage)</li>
+<li class="has-line-data" data-line-start="38" data-line-end="39">Render (as a server)</li>  
+<li class="has-line-data" data-line-start="39" data-line-end="40">Postgres Database</li>
 <li class="has-line-data" data-line-start="39" data-line-end="40">Sass</li>
-<li class="has-line-data" data-line-start="40" data-line-end="42">MUI</li>
+<li class="has-line-data" data-line-start="40" data-line-end="42">Bootstrap</li>
 <li class="has-line-data" data-line-start="40" data-line-end="42">Figma</li>
   <li class="has-line-data" data-line-start="40" data-line-end="42">Axios</li>
   <li class="has-line-data" data-line-start="40" data-line-end="42">Redux-toolkit</li>

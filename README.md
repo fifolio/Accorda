@@ -40,6 +40,16 @@ Explore opportunities. Connect with talent. Accorda – Where Careers Flourish! 
 <pre><code class="has-line-data" data-line-start="22" data-line-end="24" class="language-sh">npm run dev
 </code></pre>
 
+<h3>Backend:</h3>
+<pre><code class="has-line-data" data-line-start="16" data-line-end="19" class="language-sh">
+  cd Accorda
+  cd backend
+  npm install
+</code></pre>
+<h4 class="code-line" data-line-start=20 data-line-end=21 ><a id="Usage_20"></a>Usage</h2>
+<pre><code class="has-line-data" data-line-start="22" data-line-end="24" class="language-sh">npm run develop
+</code></pre>
+
 <h2 class="code-line" data-line-start=33 data-line-end=34 ><a id="Technologies_Used_33"></a>Technologies Used</h2>
 <p class="has-line-data" data-line-start="34" data-line-end="35">Accorda is built using the following technologies:</p>
 <ul>

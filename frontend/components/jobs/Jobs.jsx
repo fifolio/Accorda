@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import './Jobs.scss';
+import Countdown from '../countdown/Countdown';
 
 export default function Jobs() {
 
@@ -60,6 +61,8 @@ export default function Jobs() {
           <div className="spinner-border text-primary" role="status">
             {/* <span className="visually-hidden">Loading...</span> */}
           </div>
+
+          <Countdown />
         </center>
 
         {

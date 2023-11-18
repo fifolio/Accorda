@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "text"
+    },
+    "location": {
+      "type": "text"
+    },
+    "salary": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Remote",
+        "On-Site",
+        "Mixed"
+      ]
+    },
+    "education": {
+      "type": "enumeration",
+      "enum": [
+        "High School",
+        "Bachelor Degree",
+        "Master Degree",
+        "PhD Degree or Above"
+      ]
+    },
+    "experience": {
+      "type": "enumeration",
+      "enum": [
+        "Entry-level",
+        "Mid-level",
+        "Senior"
+      ]
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

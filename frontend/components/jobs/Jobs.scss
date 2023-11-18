@@ -1,0 +1,10 @@
+/* Add border on hover */
+/* Add box shadow */
+.shadow-hover {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .shadow-hover:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.20); /* Adjust values as needed */
+  }
+  

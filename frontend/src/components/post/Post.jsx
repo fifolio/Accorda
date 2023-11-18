@@ -63,7 +63,7 @@ export default function Post() {
         e.preventDefault();
         try {
             setLoading(true);
-            await axios.post('http://localhost:1337/api/jobs', {
+            await axios.post(`${apiUrl}/jobs`, {
                 data: {
                     company: jobFormData.company,
                     title: jobFormData.title,

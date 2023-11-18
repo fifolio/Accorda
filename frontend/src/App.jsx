@@ -1,6 +1,6 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ErrPage, HomePage, JobsPage, PostPage, } from '../pages';
+import { ErrPage, HomePage, JobsPage, PostPage, } from './pages';
 
 export default function App() {
 

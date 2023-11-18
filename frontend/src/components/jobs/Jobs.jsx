@@ -1,7 +1,7 @@
 import './Jobs.scss';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import Countdown from '../countdown/Countdown';
+import { Countdown } from '../index'
 
 export default function Jobs() {
 
@@ -36,8 +36,8 @@ export default function Jobs() {
           <p className="lead my-3">Explore our curated list of available jobs and unlock the door to your next career adventure! Your dream job might be just a click away. Dive into a sea of possibilities and discover the perfect match for your skills. The future awaits—start your job search now!</p>
           {/* <p className="lead mb-0"><a href="#" className="text-body-emphasis fw-bold">Continue reading...</a></p> */}
         </div>
-        <div className="col-lg-5 text-end px-0 d-none d-lg-block" style={{'margin-top': '-55px'}}>
-          <img src="https://uploads-ssl.webflow.com/6165bde105fa8d424d14e3e4/6286670d707a7523243fde26_WOWProductMockup.png" width="550px"/>
+        <div className="col-lg-5 text-end px-0 d-none d-lg-block" style={{ 'margin-top': '-55px' }}>
+          <img src="https://uploads-ssl.webflow.com/6165bde105fa8d424d14e3e4/6286670d707a7523243fde26_WOWProductMockup.png" width="550px" />
         </div>
       </div>
 
@@ -75,7 +75,7 @@ export default function Jobs() {
                   <p className="d-inline-block mb-0 text-primary-emphasis">Location: {job.attributes.location}</p>
                   <h3 className="my-2">{job.attributes.title}</h3>
                   <div className="mb-1 text-body-secondary">Salary: ${job.attributes.salary} | {job.attributes.education} | {job.attributes.experience}</div>
-                  <p className="card-text mb-3 overflow-hidden" style={{'height': '100px'}}>{job.attributes.desc}</p>
+                  <p className="card-text mb-3 overflow-hidden" style={{ 'height': '100px' }}>{job.attributes.desc}</p>
                   {/* <hr /> */}
                   <a href={`mailto:${job.attributes.email}`} className="icon-link gap-1 icon-link-hover stretched-link text-lowercase">
                     {job.attributes.email}

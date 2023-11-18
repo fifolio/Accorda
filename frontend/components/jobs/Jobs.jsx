@@ -1,18 +1,19 @@
+import './Jobs.scss';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import './Jobs.scss';
 import Countdown from '../countdown/Countdown';
 
 export default function Jobs() {
 
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     setLoading(true)
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:1337/api/jobs')
+        const response = await axios.get(`${apiUrl}/jobs`);
         setData(response.data.data)
         response.data.data ? setLoading(false) : setLoading(true);
 

@@ -1,5 +1,5 @@
 
-<p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://raw.githubusercontent.com/fifolio/Lasienne/main/Frontend/public/snap.PNG" alt="N|Solid"></p>
+<p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://raw.githubusercontent.com/fifolio/Accorda/main/frontend/public/github.png" alt="N|Solid"></p>
 
 <p class="has-line-data" data-line-start="5" data-line-end="6">
 

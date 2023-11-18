@@ -1,16 +1,41 @@
 
 import { Link } from "react-router-dom";
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import axios from "axios";
+import Countdown from "../countdown/Countdown";
 
 
 export default function Post() {
+    
+    const apiUrl = import.meta.env.VITE_API_URL;
+    const [loadingSubmit, setLoadingSubmit] = useState(true)
+    
+    useEffect(() => {
+        // setLoadingSubmit(true)
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`${apiUrl}/jobs`);
+                if(response.status === 200) {
+                    console.log('response true');
+                    setLoadingSubmit(false)
+                } else {
+                    console.log('response false');
+                    setLoadingSubmit(true)
+                }
+
+            } catch (error) {
+                console.error('something went wrong while fetching: ', error);
+                setLoadingSubmit(false)
+            }
+        }
+
+        fetchData();
+    }, [apiUrl]);
 
     // Create a ref for the button
     const buttonRef = useRef();
 
     const [loading, setLoading] = useState(false);
-
     const [jobFormData, setJobFormData] = useState({
         title: '',
         desc: '',
@@ -219,8 +244,11 @@ export default function Post() {
                         </div>
 
                         {/* <hr className="my-4" /> */}
+                        <div className={`alert alert-warning ${loadingSubmit ? '' : 'd-none'}`} role="alert">
+                            <Countdown />
+                        </div>
 
-                        <button className="w-100 btn btn-primary btn-lg fw-bold" type="submit">
+                        <button className={`w-100 btn btn-primary btn-lg fw-bold ${loadingSubmit ? 'disabled' : ''}`} type="submit">
 
                             <span className={`${loading ? 'd-none' : ''}`}>
                                 Post Your Job
@@ -233,6 +261,7 @@ export default function Post() {
 
                 </div>
             </div>
+
 
             {/* <!-- Button trigger modal --> */}
             <button ref={buttonRef} id="SubmittedCorrect" type="button" className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">

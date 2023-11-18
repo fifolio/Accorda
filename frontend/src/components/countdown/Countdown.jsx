@@ -30,9 +30,7 @@ export default function Countdown() {
     return (
         <>
             <div className="countdown mt-2 text-secondary fw-semibold">
-                <p>Please wait for {formattedTime()} seconds until the loading complete 😊✌
-                    {/* {secs === 0 && <p>Opening...</p>} */}
-                </p>
+                <p>Please wait for {formattedTime()} seconds until the loading complete 😊✌</p>
             </div>
         </>
     )

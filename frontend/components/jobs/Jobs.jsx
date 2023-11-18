@@ -24,7 +24,7 @@ export default function Jobs() {
     }
 
     fetchData();
-  }, []);
+  }, [apiUrl]);
 
 
   return (

@@ -62,7 +62,6 @@ Explore opportunities. Connect with talent. Accorda – Where Careers Flourish! 
 <li class="has-line-data" data-line-start="40" data-line-end="42">Bootstrap</li>
 <li class="has-line-data" data-line-start="40" data-line-end="42">Figma</li>
   <li class="has-line-data" data-line-start="40" data-line-end="42">Axios</li>
-  <li class="has-line-data" data-line-start="40" data-line-end="42">Redux-toolkit</li>
 </ul>
 <h2 class="code-line" data-line-start=42 data-line-end=43 ><a id="Contributing_42"></a>Contributing</h1>
 <p class="has-line-data" data-line-start="43" data-line-end="44">If you’d like to contribute to Accorda, feel free to fork this repository and submit a pull request with your changes. Please make sure to adhere to the project’s coding standards and guidelines.</p>

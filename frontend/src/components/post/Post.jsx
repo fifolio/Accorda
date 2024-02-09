@@ -186,8 +186,8 @@ export default function Post() {
                             </div>
 
                             <div className="col-12">
-                                <label htmlFor="lastName" className="form-label">Monthly Salary Range</label>
-                                <input onChange={handleInputChange} name="salary" value={jobFormData.salary} type="number" className="form-control" id="lastName" placeholder="ex. $2500 - $4250" required={true} />
+                                <label htmlFor="lastName" className="form-label">Monthly Salary</label>
+                                <input onChange={handleInputChange} name="salary" value={jobFormData.salary} type="number" className="form-control" id="lastName" placeholder="ex. $4250" required={true} />
 
                             </div>
 

@@ -18,7 +18,7 @@ export default function Jobs() {
           appwriteConfig.database, // databaseId
           appwriteConfig.collection, // collectionId
       );
-        console.log(response)
+        console.log(response.documents)
         response.data.data ? setLoading(false) : setLoading(true);
 
       } catch (error) {

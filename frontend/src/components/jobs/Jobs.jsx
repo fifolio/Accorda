@@ -7,7 +7,6 @@ export default function Jobs() {
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  // const apiUrl = import.meta.env.VITE_API_URL;
 
 
   useEffect(() => {
@@ -15,8 +14,8 @@ export default function Jobs() {
     const fetchData = async () => {
       try {
         const response = await databases.listDocuments(
-          appwriteConfig.database, // databaseId
-          appwriteConfig.collection, // collectionId
+          appwriteConfig.database,
+          appwriteConfig.collection,
         );
         setData(response.documents)
         response.data.data ? setLoading(false) : setLoading(true);

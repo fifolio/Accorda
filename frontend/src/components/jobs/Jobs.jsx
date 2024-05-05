@@ -75,14 +75,14 @@ export default function Jobs() {
             <div className="col-md-6" key={job.id}>
               <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-hover h-md-250 position-relative">
                 <div className="col p-4 d-flex flex-column position-static text-capitalize">
-                  <strong className="d-inline-block mb-0 text-primary-emphasis">{job.attributes.company}</strong>
-                  <p className="d-inline-block mb-0 text-primary-emphasis">Location: {job.attributes.location}</p>
-                  <h3 className="my-2">{job.attributes.title}</h3>
-                  <div className="mb-1 text-body-secondary">Salary: ${job.attributes.salary} | {job.attributes.education} | {job.attributes.experience}</div>
-                  <p className="card-text mb-3 overflow-hidden" style={{ 'height': '100px' }}>{job.attributes.desc}</p>
+                  <strong className="d-inline-block mb-0 text-primary-emphasis">{job.company}</strong>
+                  <p className="d-inline-block mb-0 text-primary-emphasis">Location: {job.location}</p>
+                  <h3 className="my-2">{job.title}</h3>
+                  <div className="mb-1 text-body-secondary">Salary: ${job.salary} | {job.education} | {job.experience}</div>
+                  <p className="card-text mb-3 overflow-hidden" style={{ 'height': '100px' }}>{job.desc}</p>
                   {/* <hr /> */}
-                  <a href={`mailto:${job.attributes.email}`} className="icon-link gap-1 icon-link-hover stretched-link text-lowercase">
-                    {job.attributes.email}
+                  <a href={`mailto:${job.email}`} className="icon-link gap-1 icon-link-hover stretched-link text-lowercase">
+                    {job.email}
                   </a>
                 </div>
               </div>

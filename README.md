@@ -28,7 +28,7 @@ Explore opportunities. Connect with talent. Accorda – Where Careers Flourish! 
 <p class="has-line-data" data-line-start="8" data-line-end="9">To get started with Accorda, you’ll need to clone this repository to your local machine:</p>
 <pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/Accorda.git"> https://github.com/fifolio/Accorda.git</a>
 </code></pre>
-<p class="has-line-data" data-line-start="13" data-line-end="14">Once you have the repository on your local machine, navigate to the project directory and install the necessary dependencies:</p>
+<p class="has-line-data" data-line-start="13" data-line-end="14">Once you have the repository on your local machine, navigate to the project directory and install the necessary dependencies.</p>
 
 <h2 class="code-line" data-line-start=33 data-line-end=34 ><a id="Technologies_Used_33"></a>Technologies Used</h2>
 <p class="has-line-data" data-line-start="34" data-line-end="35">Accorda is built using the following technologies:</p>
@@ -36,8 +36,6 @@ Explore opportunities. Connect with talent. Accorda – Where Careers Flourish! 
 <li class="has-line-data" data-line-start="36" data-line-end="37">Vite</li>
 <li class="has-line-data" data-line-start="37" data-line-end="38">React</li>
 <li class="has-line-data" data-line-start="38" data-line-end="39">Appwrite (as a Backend)</li>
-<li class="has-line-data" data-line-start="38" data-line-end="39">Render (as a server)</li>  
-<li class="has-line-data" data-line-start="39" data-line-end="40">Postgres Database</li>
 <li class="has-line-data" data-line-start="39" data-line-end="40">Sass</li>
 <li class="has-line-data" data-line-start="40" data-line-end="42">Bootstrap</li>
 <li class="has-line-data" data-line-start="40" data-line-end="42">Figma</li>

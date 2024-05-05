@@ -1,13 +1,12 @@
 import {ID} from 'appwrite';
 import { appwriteConfig, databases } from "../../../appwrite/config";
 import { Link } from "react-router-dom";
-import { useRef, useState, useEffect } from 'react';
-import Countdown from "../countdown/Countdown";
+import { useRef, useState } from 'react';
 
 
 export default function Post() {
     
-    const [loadingSubmit, setLoadingSubmit] = useState(true)
+    const [loadingSubmit] = useState(true)
     
     // useEffect(() => {
     //     // setLoadingSubmit(true)
@@ -246,9 +245,7 @@ export default function Post() {
                         </div>
 
                         {/* <hr className="my-4" /> */}
-                        <div className={`alert alert-warning ${loadingSubmit ? '' : 'd-none'}`} role="alert">
-                            <Countdown />
-                        </div>
+                
 
                         <button className={`w-100 btn btn-primary btn-lg fw-bold ${loadingSubmit ? 'disabled' : ''}`} type="submit">
 

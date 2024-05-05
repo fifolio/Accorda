@@ -1,19 +1,26 @@
+import { Client, Databases } from "appwrite";
 import './Jobs.scss';
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Countdown } from '../index'
+import { appwriteConfig } from "../../../appwrite/config";
 
 export default function Jobs() {
+  const client = new Client().setEndpoint(appwriteConfig.endpoint).setProject(appwriteConfig.projectId); 
+  const databases = new Databases(client);
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const apiUrl = import.meta.env.VITE_API_URL;
+  // const apiUrl = import.meta.env.VITE_API_URL;
+  
 
   useEffect(() => {
     setLoading(true)
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${apiUrl}/jobs`);
+        const response = await databases.listDocuments(
+          appwriteConfig.database, // databaseId
+          appwriteConfig.collection, // collectionId
+      );
         setData(response.data.data)
         response.data.data ? setLoading(false) : setLoading(true);
 
@@ -24,7 +31,7 @@ export default function Jobs() {
     }
 
     fetchData();
-  }, [apiUrl]);
+  }, []);
 
 
   return (

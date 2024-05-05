@@ -6,7 +6,7 @@ import { useRef, useState } from 'react';
 
 export default function Post() {
     
-    const [loadingSubmit] = useState(true)
+    // const [loadingSubmit] = useState(true)
     
     // useEffect(() => {
     //     // setLoadingSubmit(true)
@@ -247,7 +247,7 @@ export default function Post() {
                         {/* <hr className="my-4" /> */}
                 
 
-                        <button className={`w-100 btn btn-primary btn-lg fw-bold ${loadingSubmit ? 'disabled' : ''}`} type="submit">
+                        <button className={`w-100 btn btn-primary btn-lg fw-bold`} type="submit">
 
                             <span className={`${loading ? 'd-none' : ''}`}>
                                 Post Your Job

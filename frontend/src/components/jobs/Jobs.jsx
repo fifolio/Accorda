@@ -5,10 +5,10 @@ import { Countdown } from '../index'
 
 export default function Jobs() {
 
-  const [data] = useState([]);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   // const apiUrl = import.meta.env.VITE_API_URL;
-  
+
 
   useEffect(() => {
     setLoading(true)
@@ -17,8 +17,8 @@ export default function Jobs() {
         const response = await databases.listDocuments(
           appwriteConfig.database, // databaseId
           appwriteConfig.collection, // collectionId
-      );
-        console.log(response.documents)
+        );
+        setData(response.documents)
         response.data.data ? setLoading(false) : setLoading(true);
 
       } catch (error) {

@@ -229,7 +229,7 @@ export default function Post() {
 
                         <div className="col-sm-12 mt-3">
                             <label htmlFor="firstName" className="form-label">Company Email</label>
-                            <input onChange={handleInputChange} name="email" value={jobFormData.email} type="text" className="form-control" placeholder="ex. youremail@company.com" required />
+                            <input onChange={handleInputChange} name="email" value={jobFormData.email} type="email" className="form-control" placeholder="ex. youremail@company.com" required />
                         </div>
 
                         {/* <hr className="my-4" /> */}

@@ -1,14 +1,11 @@
-import { Client, Databases } from "appwrite";
+import { appwriteConfig, databases } from "../../../appwrite/config";
 import './Jobs.scss';
 import { useState, useEffect } from 'react';
 import { Countdown } from '../index'
-import { appwriteConfig } from "../../../appwrite/config";
 
 export default function Jobs() {
-  const client = new Client().setEndpoint(appwriteConfig.endpoint).setProject(appwriteConfig.projectId); 
-  const databases = new Databases(client);
 
-  const [data, setData] = useState([]);
+  const [data] = useState([]);
   const [loading, setLoading] = useState(false);
   // const apiUrl = import.meta.env.VITE_API_URL;
   
@@ -21,7 +18,7 @@ export default function Jobs() {
           appwriteConfig.database, // databaseId
           appwriteConfig.collection, // collectionId
       );
-        setData(response.data.data)
+        console.log(response)
         response.data.data ? setLoading(false) : setLoading(true);
 
       } catch (error) {

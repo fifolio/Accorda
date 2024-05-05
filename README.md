@@ -55,7 +55,7 @@ Explore opportunities. Connect with talent. Accorda – Where Careers Flourish! 
 <ul>
 <li class="has-line-data" data-line-start="36" data-line-end="37">Vite</li>
 <li class="has-line-data" data-line-start="37" data-line-end="38">React</li>
-<li class="has-line-data" data-line-start="38" data-line-end="39">Strapi (as a Backend)</li>
+<li class="has-line-data" data-line-start="38" data-line-end="39">Appwrite (as a Backend)</li>
 <li class="has-line-data" data-line-start="38" data-line-end="39">Render (as a server)</li>  
 <li class="has-line-data" data-line-start="39" data-line-end="40">Postgres Database</li>
 <li class="has-line-data" data-line-start="39" data-line-end="40">Sass</li>
